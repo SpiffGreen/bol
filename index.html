@@ -4,621 +4,221 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boldwallet</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
+    <title>Boldwallet™</title>
+    <!-- import externals -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <!-- hero section -->
-    <section id="hero">
-      <div class="container">
-        <!-- the nav section -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
+    <!-- Nav Section -->
+    <header>
+      <!-- <div class="logo">
+      <img src="./assets/images/logo.png" alt="logo">
+    </div>
+    <nav>
+      <ul class="navLinks">
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/pricing.html">Pricing</a></li>
+        <li><a href="/pages/developers.html">Developers</a></li>
+        <li><a href="/pages/documentation.html">Documentation</a></li>
+        <li><a href="/pages/support">Support</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a href="/pages/SignIn.html" class="btn">Signin</a>
+    </div> -->
+
+      <!-- Navbar -->
+      <div class="max-w-6xl container mx-auto px-4 sm:px-6">
+        <div
+          class="flex justify-between items-center py-4 md:justify-start md:space-x-10"
+        >
+          <div class="flex justify-start lg:flex-1">
+            <a
+              aria-current="page"
+              class="logo flex justify-center items-center primaryColor text-lg active"
+              href="/"
+              ><img
                 src="/assets/images/logo.png"
                 alt=""
-                width="40"
-                height="40"
+                width="45px"
+                height="45px"
               />
-            </a>
+              <!-- <span class="logo-text">Duefile</span></a> -->
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
             <button
-              class="navbar-toggler"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600"
+              id="headlessui-popover-button-5"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
-              aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="sr-only">Open menu</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav float-right">
-                <a class="nav-link" href="/pages/pricing.html">Pricing</a>
-                <a class="nav-link" href="/pages/solution.html">Support</a>
-                <a class="nav-link" href="/">Developers</a>
-              </div>
-              <div class="float-left">
-                <button type="button" class="btn btn-outline-primary">
-                  Sign in
-                </button>
-              </div>
-            </div>
           </div>
-        </nav>
-        <div class="container hero-container">
-          <div class="row hero-sec-row">
-            <div class="col-lg-6 hero-text">
-              <h1>Global Payment Gateway Made Easy</h1>
-              <p class="subtext display-block">
-                Seamless, Flexible and Easy access transactions from home.
-              </p>
-              <button type="button" class="btn btn-primary hero-button">
-                Get Started
+          <nav class="hidden md:flex space-x-10">
+            <div class="relative">
+              <button
+                class="text-gray-600 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900"
+                id="headlessui-popover-button-1"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>About</span
+                >
+                <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="text-gray-600 ml-2 h-5 w-5 group-hover:text-gray-600"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg> -->
               </button>
             </div>
-            <div class="col-lg-6 margin">
-              <img src="/assets/images/hero-design.svg" alt="transfer" />
+            <a
+              class="text-base font-medium text-gray-600 hover:text-gray-900"
+              href="/about"
+              >Contact</a
+            ><a
+              href="#"
+              class="text-base font-medium text-gray-600 hover:text-gray-900"
+              >Docs</a
+            >
+            <div class="relative">
+              <button
+                class="text-gray-600 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900"
+                id="headlessui-popover-button-3"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>Developers</span
+                >
+                <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="text-gray-600 ml-2 h-5 w-5 group-hover:text-gray-600"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg> -->
+              </button>
             </div>
+          </nav>
+          <div class="hidden md:flex items-center gap-1 justify-end md:flex-1 lg:w-0">
+            <a
+              href="/login"
+              class="rounded-3xl hover:bg-black hover:text-white border-black border-2 py-1 px-3"
+              >Login</a
+            >
+            <a href="/signup" class="rounded-3xl hover:bg-black hover:text-white border-black border-2 py-1 px-3">Sign up</a>
           </div>
         </div>
-        <!-- <div class="col-lg-12">
-          <img src="Pattern.svg" alt="pattern" />
-        </div> -->
       </div>
-    </section>
-    <section id="featured_partners">
-      <h3 class="h3-tags">We are featured on popular partners like</h3>
-      <div class="container padding margin">
-        <div class="row card-row">
-          <div class="col-lg-2 config-margin">
-            <p class="p-subtext">College Akwa</p>
-          </div>
-          <div class="col-lg-2 config-margin">
-            <p class="p-subtext">College Akwa</p>
-          </div>
+    </header>
 
-          <div class="col-lg-2 config-margin">
-            <p class="p-subtext">College Akwa</p>
-          </div>
-          <div class="col-lg-2 config-margin">
-            <p class="p-subtext">College Akwa</p>
-          </div>
-          <div class="col-lg-2 config-margin">
-            <p class="p-subtext">College Akwa</p>
-          </div>
+    <!--Hero Section -->
+    <div class="hero min-h-[600px] flex items-center">
+      <div class="flex grow justify-between items-center container max-w-6xl mx-auto max-h-[480px] min-h-[350px]">
+        <div class="text grow">
+          <h1 class="text-[2.813rem]">Global Payment <br>Gateway Made <br>Easy</h1>
+          <p class="font-light text-justify my-2.5">Seamless, Flexible and Easy access transactions from home. </p>
+          <button class="btn bg-orange-500 mt-2 rounded-3xl py-2 px-3 text-white">Get Started</button>
         </div>
+        <img src="/assets//images/hero-design.svg" class="max-h-fit" alt="hero-image">
       </div>
-    </section>
-    <section id="how-it-works">
-      <div class="container margin">
-        <h3 class="h3-tags margin-bottom">How it works</h3>
-        <div class="row">
-          <div class="container col-6 margin">
-            <img src="assets/images/payment-process.svg" alt="payment" />
-          </div>
-          <div class="container col-6">
-            <div class="card feature-cards">
-              <div class="circle-radius">
-                <img
-                  src="assets/icons/Create acct.svg"
-                  class="text-orange"
-                  alt="create account"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Create account</h5>
-                <p class="card-text card-subtext">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-            <div class="card feature-cards">
-              <div class="circle-radius">
-                <img
-                  src="assets/icons/Create acct.svg"
-                  class="text-orange"
-                  alt="create account"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Send & Receive money</h5>
-                <p class="card-text card-subtext">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-            
-              <div class="card feature-cards">
-                <div class="circle-radius">
-                  <img
-                    src="assets/icons/Create acct.svg"
-                    class="text-orange"
-                    alt="create account"
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Send & Receive money</h5>
-                  <p class="card-text card-subtext">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+
+    <!-- Why Us -->
+    <div class="why">
+      <div class="max-w-6xl mx-auto grid grid-cols-2">
+      <div><p class="text-lg">Why Boldwallet</p>
+        <h2 class="text-3xl my-3">Tailored Payments <br>Solutions for your <br> Business.</h2>
+        <p class="text-justify font-thin mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus facilis cumque ut harum ab beatae eius, quas animi illo repellendus provident quis quo quam dicta nesciunt nobis ipsum sunt numquam pariatur!</p></div>
       </div>
-    </section>
-    <section id="what-we-offer">
-      <div class="container">
-        <div class="text-section-offer">
-          <h3 class="h3-tag padding inter-padding">What we offer</h3>
-          <h4 class="inter-padding solution-text">
-            Solution to Entreprise Business
-          </h4>
-          <p class="inter-padding offers-subtext">
-            We provide a payment gateway for sending and receiving of money. We
-            also help customers make smooth transactions e.g schools, church
-            etc. (B2B E-commerce, B2C E-commerce)
+      <div class="max-w-6xl mx-auto grid grid-cols-3 gap-3 py-12">
+        <div class="reason">
+          <p class="icon">
+            <span class="material-icons material-icons-outlined">
+              credit_card
+              </span>
           </p>
+          <h3>Secure Payment</h3>
+          <p class="detail font-thin text-sm my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero sed eum voluptate deserunt velit commodi obcaecati perferendis assumenda! Ad, in asperiores!</p>
+          <p><a href="#" class="text-blue-500 text-sm hover:underline">Risk and Compliance</a></p>
         </div>
-        <div class="container">
-          <div class="row padding">
-            <div class="col-lg-7">
-              <div class="card b2b-card">
-                <div class="card-body">
-                  <div class="card-title b2b-card-titles">
-                    Business 2 Business (B2B)
-                  </div>
-                  <div class="card-text">
-                    <p class="card-body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Egestas tellus imperdiet risus, consequat augue neque
-                      porttitor vitae congue. Risus penatibus ante tristique
-                      quis ultrices sed tempus risus
-                    </p>
-                    <ol>
-                      <li>Expand customer experience</li>
-                      <li>Real time informatics on payment transactions</li>
-                      <li>Scheduled payments</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <img
-                src="/assets/images/businessimage.jpg"
-                class="image-styling img-fluid"
-                alt="business"
-              />
-            </div>
-          </div>
+        <div class="reason">
+          <p class="icon">
+            <span class="material-icons material-icons-outlined">
+              credit_card
+              </span>
+          </p>
+          <h3>Revenue</h3>
+          <p class="detail font-thin text-sm my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero sed eum voluptate deserunt velit commodi obcaecati perferendis assumenda! Ad, in asperiores!</p>
+          <p><a href="#" class="text-blue-500 text-sm hover:underline">Grow with Boldwallet</a></p>
         </div>
-        <div class="container padding">
-          <div class="row padding">
-            <div class="col-lg-5 padding">
-              <img
-                src="/assets/images/shopping.jpg"
-                class="image-styling1 img-fluid"
-                alt="business"
-              />
-            </div>
-            <div class="col-lg-7 padding">
-              <div class="card b2b-card alignment">
-                <div class="card-body">
-                  <div class="card-title b2b-card-titles">
-                    Business 2 Cutomer (B2C)
-                  </div>
-                  <div class="card-text">
-                    <p class="card-body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Egestas tellus imperdiet risus, consequat augue neque
-                      porttitor vitae congue. Risus penatibus ante tristique
-                      quis ultrices sed tempus risus
-                    </p>
-                    <ol>
-                      <li>Expand customer experience</li>
-                      <li>Real time informatics on payment transactions</li>
-                      <li>Scheduled payments</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="reason">
+          <p class="icon">
+            <span class="material-icons">
+              credit_card
+            </span>
+          </p>
+          <h3>Customised for you</h3>
+          <p class="detail font-thin text-sm my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero sed eum voluptate deserunt velit commodi obcaecati perferendis assumenda! Ad, in asperiores!</p>
+          <p><a href="#" class="text-blue-500 text-sm hover:underline">Learn more multiple payment options</a></p>
         </div>
       </div>
-    </section>
-    <section id="designed-for-developers">
-      <div class="container padding">
-        <div class="text-center">
-          <h3 class="h3-tags">Designed for developers</h3>
-        </div>
-        <div class="row designed-for-devs">
-          <div class="col-lg-6">
-            <div class="container">
-              <div class="">
-                <h3 class="solution-text margin-bottom">
-                  Experience easy-to-use well documented APIs
-                </h3>
-              </div>
-              <p class="card-subtext margin-bottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tristique pharetra est ultrices imperdiet mi enim cursus. Morbi
-                mauris aliquam cursus amet, leo lacus. Leo blandit sed tortor,
-                scelerisque erat. Mattis vel, diam ut interdum nunc.
-              </p>
-              <button
-                type="button"
-                class="btn btn-primary hero-button margin-bottom"
-              >
-                Read the docx
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img
-                    src="/assets/images/code.jpg "
-                    class="image-style"
-                    alt="coding"
-                  />
-                </div>
-                <div class="col-lg-2">
-                  <img
-                    src="/assets/images/code.jpg "
-                    class="image-style1"
-                    alt="coding"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="pricing">
-      <div class="container padding">
-        <h3 class="h3-tag padding margin-bottom">Pricing</h3>
-        <div class="container">
-          <div class="row margin">
-            <div
-              class="card col-5 padding-sides border-none bg shadow pricing-card"
-            >
-              <div class="card-body">
-                <i
-                  class="fa-solid fa-money-bill-transfer icon-color margin-bottom"
-                ></i>
-                <h6 class="regular-fonts inter-padding">LOCAL TRANSACTIONS</h6>
-                <h3 class="">1.5% + ₦85</h3>
-                <p class="regular-fonts">capped at 2500</p>
-                <ul class="text-left card-subtext inter-padding">
-                  <li>₦87 fee waived for transactions under ₦1500</li>
-                  <li>Local transactions fees are capped at ₦2500</li>
-                  <li>No Hidden Charges</li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn btn-primary hero-button margin-bottom"
-                >
-                  Select this plan
-                </button>
-              </div>
-            </div>
-            <div
-              class="card col-5 padding-sides border-none bg shadow pricing-card"
-            >
-              <div class="card-body">
-                <i
-                  class="fa-solid fa-money-bill-transfer icon-color margin-bottom"
-                ></i>
-                <h6 class="regular-fonts inter-padding">LOCAL TRANSACTIONS</h6>
-                <h3 class="">1.5% + ₦85</h3>
-                <p class="regular-fonts">capped at 2500</p>
-                <ul class="text-left card-subtext inter-padding">
-                  <li>₦87 fee waived for transactions under ₦1500</li>
-                  <li>Local transactions fees are capped at ₦2500</li>
-                  <li>No Hidden Charges</li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn btn-primary hero-button margin-bottom"
-                >
-                  Select this plan
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="customer-review">
-      <div class="container margin-bottom">
-        <h3 class="h3-tags margin-bottom">Customers Review</h3>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-              class="orange-color"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-              class="orange-color"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-              class="orange-color"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container padding-sides">
-                <img
-                  src="/assets/images/userface.jpg"
-                  class="margin-bottom shadow circle-image"
-                  alt="users profile"
-                />
-              </div>
-              <div
-                class="container bg shadow padding-sides carousel-padding margin-bottom"
-              >
-                <div class="container margin-bottom">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                <p class="text-center regular-fonts">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce tristique pharetra est ultrices imperdiet mi enim
-                  cursus. Morbi mauris aliquam cursus am.”
-                </p>
-                <h6 class="inter-padding">Jane Doe</h6>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container padding-sides">
-                <img
-                  src="/assets/images/userface.jpg"
-                  class="margin-bottom shadow circle-image"
-                  alt="users profile"
-                />
-              </div>
-              <div
-                class="container bg shadow padding-sides carousel-padding margin-bottom"
-              >
-                <div class="container margin-bottom">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                <p class="text-center regular-fonts">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce tristique pharetra est ultrices imperdiet mi enim
-                  cursus. Morbi mauris aliquam cursus am.”
-                </p>
-                <h6 class="inter-padding">Jane Doe</h6>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container padding-sides">
-                <img
-                  src="/assets/images/userface.jpg"
-                  class="margin-bottom shadow circle-image"
-                  alt="users profile"
-                />
-              </div>
-              <div
-                class="container bg shadow padding-sides carousel-padding margin-bottom"
-              >
-                <div class="container margin-bottom">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                <p class="text-center regular-fonts">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce tristique pharetra est ultrices imperdiet mi enim
-                  cursus. Morbi mauris aliquam cursus am.”
-                </p>
-                <h6 class="inter-padding">Jane Doe</h6>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="make-transactions">
-      <div id="make-transit" class="make-transactions">
-        <div class="container">
-          <div class="row margin-row">
-            <div class="col-8">
-              <h6 class="text-left regular-fonts">TRY BOLDWALLET</h6>
-              <h1 class="text-left">Make all your transactions with ease</h1>
-            </div>
-            <div class="col-4 margin">
-              <button
-                type="button"
-                class="btn btn-secondary orange-color create-account"
-              >
-                Create account
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="footer">
-      <div class="container">
-        <div class="row margin-row text-left">
-          <div class="col-3">
-            <img
-              src="/assets/images/logo.png"
-              alt="logo"
-              class="margin-bottom"
-              width="40"
-              height="40"
-            />
-            <p class="regular-fonts text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              tristique pharetra est ultrices imperdiet mi enim cursus. Morbi
-              mauris aliquam cursus amet, leo lacus. Leo blandit sed tortor,
-            </p>
-          </div>
-          <div class="col-3 padding-sides">
-            <h5 class="text-left margin-bottom">Nigeria</h5>
-            <div class="row">
-              <div class="row">
-                <div class="container text-left row">
-                  <i
-                    class="fa-solid fa-location-dot icon-color col-3 icon-style text-lefts"
-                  ></i>
-                  <p class="text-left regular-fonts col-9">
-                    No. 96 Zik Avenue , Uwani Enugu , Enugu State , Nigeria
-                  </p>
-                </div>
-              </div>
+    </div>
 
-              <div class="row">
-                <div class="row">
-                  <div class="container text-left row">
-                    <i
-                      class="fa-solid fa-phone icon-color col-3 icon-style text-lefts"
-                    ></i>
-                    <p class="text-left regular-fonts col-9 padding-top-little">
-                      +234(0)80-6809-4681
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <h5 class="text-left margin-bottom">United Kingdom</h5>
-            <div class="row">
-              <div class="row">
-                <div class="container text-left row">
-                  <i
-                    class="fa-solid fa-location-dot icon-color col-3 icon-style text-lefts"
-                  ></i>
-                  <p class="text-left regular-fonts col-9">
-                    116 Armoury Road London, United Kingdom. SE8 4LB
-                  </p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="row">
-                  <div class="container text-left row">
-                    <i
-                      class="fa-solid fa-phone icon-color col-3 icon-style text-lefts"
-                    ></i>
-                    <p class="text-left regular-fonts col-9 padding-top-little">
-                      +447459859091
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <h5 class="text-left margin-bottom">Navigation</h5>
-            <div class="row">
-              <div class="row">
-                <div class="container text-left row">
-                  <a href="#" class="text-left regular-fonts col-9">Pricing</a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="row">
-                  <div class="container text-left row">
-                    <a
-                      href="#"
-                      class="text-left regular-fonts col-9 padding-top-little"
-                    >
-                      Support
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="container text-left row">
-                    <a
-                      href=""
-                      class="text-left regular-fonts col-9 padding-top-little"
-                    >
-                      Developers
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Trusted By -->
+    <div class="max-w-6xl mx-auto min-h-[15rem] flex items-center">
+      <div class="grid grid-cols-2">
+        <div class="text">
+          <h2 class="font-">We are featured on popular partners like</h2>
+          <p class="font-thin my-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ex modi molestias vel non cum repellendus, optio ipsa pariatur voluptatum nulla itaque officia odio eligendi praesentium, quasi asperiores.</p>
         </div>
-        <div class="container padding-sides">
-          <div class="circle-chat shadow">
-            <i class="fa-solid fa-message icon-size"></i>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-8">
-              <p class="regular-fonts text-left padding-sides">
-                Boldwallet™ © 2022 All Rights Reserved
-              </p>
-            </div>
-            <div class="col-2 regular-fonts">
-              <p>Terms & Conditions</p>
-            </div>
-            <div class="col-2 regular-fonts">Privacy Policy</div>
-          </div>
-        </div>
+        <div class="brandImages"></div>
       </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    </div>
   </body>
 </html>

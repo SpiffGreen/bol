@@ -1,0 +1,57 @@
+/*
+* @description This file contains a general styles shared between different pages to avoid duplicatation.
+* @guide
+  base font: "Open Sans", sans-serif
+*/
+
+:root {
+  /* Color */
+  --primary-color: #f1592a;
+  --secondary-color: #36a681;
+  --tertiary-color: #fae4dd;
+  --bg-light: #fbfbfb;
+  --text-dark: #707070;
+  --text-light: #ffffff;
+
+  /* Added */
+  --link-color: #0775d8;
+}
+
+/* CSS reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
