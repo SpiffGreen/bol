@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
+
     <!-- Nav Section -->
     <header>
       <!-- <div class="logo">
@@ -148,10 +149,10 @@
           <div class="hidden md:flex items-center gap-1 justify-end md:flex-1 lg:w-0">
             <a
               href="/login"
-              class="rounded-3xl hover:bg-black hover:text-white border-black border-2 py-1 px-3"
+              class="rounded-3xl hover:bg-black hover:text-white border-black border py-1 px-3"
               >Login</a
             >
-            <a href="/signup" class="rounded-3xl hover:bg-black hover:text-white border-black border-2 py-1 px-3">Sign up</a>
+            <a href="/signup" class="rounded-3xl hover:bg-black hover:text-white border-black border py-1 px-3">Sign up</a>
           </div>
         </div>
       </div>
@@ -211,14 +212,93 @@
     </div>
 
     <!-- Trusted By -->
-    <div class="max-w-6xl mx-auto min-h-[15rem] flex items-center">
-      <div class="grid grid-cols-2">
+    <div class="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12">
+      <div class="grid grid-cols-2 items-center">
         <div class="text">
           <h2 class="font-">We are featured on popular partners like</h2>
           <p class="font-thin my-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ex modi molestias vel non cum repellendus, optio ipsa pariatur voluptatum nulla itaque officia odio eligendi praesentium, quasi asperiores.</p>
         </div>
-        <div class="brandImages"></div>
+        <div class="brandImages">
+          <div class="grid grid-cols-3 gap-3 place-items-center">
+            <img src="/assets/images/brands/1xbet.png" class="max-h-12" alt="brand">
+            <img src="/assets/images/brands/dominos.png" class="max-h-12" alt="brand">
+            <img src="/assets/images/brands/ginga.png" class="max-h-12" alt="brand">
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Talk to us -->
+    <div class="talk max-w-6xl mx-auto flex items-center min-h-[350px]">
+      <div class="main max-w-2xl mx-auto">
+        <h3 class="text-center text-3xl mb-5">Try Boldwallet</h3>
+        <p class="text-center font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad asperiores repellat mollitia dolores officiis error, consectetur iure, doloribus Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, amet.</p>
+        <div class="buttons mx-auto max-w-xl flex gap-3 flex-wrap content-center justify-center items-center my-4 text-sm">
+          <a href="/" class="btn bg-black hover:bg-orange-600 text-white rounded-3xl py-2 px-4 ">Get Started</a>
+          <a href="#" class="flex items-center"><span class="text-blue-500 font-light hover:underline">Lets Talk</span> <span class="material-icons font-extralight text-gray-300">navigate_next</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-800 text-white pt-11">
+      <div class="max-w-6xl mx-auto py-2 min-h-[300px]">
+        <div class="grid grid-flow-col auto-cols-auto">
+          <section>
+            <div class="mb-4">Boldwallet</div>
+            <ul class="font-light">
+              <li class="mb-2 hover:text-blue-500"><a href="#">Blog</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Contact Us</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">For E-Commerce</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">For Entrepreneurs</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="mb-4">Boldwallet</div>
+            <ul class="font-light">
+              <li class="mb-2 hover:text-blue-500"><a href="#">Blog</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Contact Us</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">For E-Commerce</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">For Entrepreneurs</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="mb-4">Features</div>
+            <ul class="font-light">
+              <li class="mb-2 hover:text-blue-500"><a href="#">Pricing</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Payment Methods</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Libraries & Plugins</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Disputes</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Refunds</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Recurring Payments</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="mb-4">Knowledge Hub</div>
+            <ul class="font-light">
+              <li class="mb-2 hover:text-blue-500"><a href="#">Support</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Developers</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Documentation</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Release Notes</a></li>
+              <li class="mb-2 hover:text-blue-500"><a href="#">Support Ticket</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="mb-4">Subscribe</div>
+            <form>
+              <div class="input"></div>
+            </form>
+          </section>
+        </div>
+        <div class="copyright">
+          <p class="text-center mt-7 md:mt-6">2022 Boldwallet™ | All Rights Reserved</p>
+          
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
