@@ -9,7 +9,6 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      dd
       <div className="hero min-h-[600px] flex items-center">
         <div className="flex grow justify-between items-center container max-w-6xl mx-auto max-h-[480px] min-h-[350px]">
           <div className="text grow">
