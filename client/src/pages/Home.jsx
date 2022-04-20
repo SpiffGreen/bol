@@ -3,6 +3,7 @@ import heroImage from "../assets/images/hero-design.svg";
 import brand1 from "../assets/images/brands/1xbet.png";
 import brand2 from "../assets/images/brands/dominos.png";
 import brand3 from "../assets/images/brands/ginga.png";
+import businessView from "../assets/images/businessview.jpg";
 
 function Home() {
   return (
@@ -100,12 +101,70 @@ function Home() {
         </div>
       </div>
 
+      {/* Get View of business */}
+      <section className="business-view">
+        <div className="max-w-6xl mx-auto py-20">
+          <div className="grid grid-cols-2 gap-10 items-center">
+            <div className="image">
+              <img src={businessView} alt="business view" className="" />
+            </div>
+            <div className="text">
+              <div className="text-3xl">Get a full view of your business at a glance.</div>
+              <p className="font-light my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
+              <div className="grid grid-cols-2 gap-5">
+
+                <div className="grid-it">
+                  <div className="icon text-gray-500">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                      <span className="material-icons">payments</span>
+                    </div>
+                  </div>
+                  <div className="title text-xl my-2">Dashboard Analytics</div>
+                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                </div>
+
+                <div className="grid-it">
+                  <div className="icon text-gray-500">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                      <span className="material-icons">payments</span>
+                    </div>
+                  </div>
+                  <div className="title text-xl my-2">Dashboard Analytics</div>
+                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                </div>
+
+                <div className="grid-it">
+                  <div className="icon text-gray-500">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                      <span className="material-icons">payments</span>
+                    </div>
+                  </div>
+                  <div className="title text-xl my-2">Dashboard Analytics</div>
+                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                </div>
+
+                <div className="grid-it">
+                  <div className="icon text-gray-500">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                      <span className="material-icons">payments</span>
+                    </div>
+                  </div>
+                  <div className="title text-xl my-2">Dashboard Analytics</div>
+                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Partners */}
       <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12">
         <div className="grid grid-cols-2 items-center">
           <div className="text">
             <h2 className="font-bold text-3xl">Our partners</h2>
-            <p className="font-thin my-3 text-sm">
+            <p className="font-thin mt-4 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium ex modi molestias vel non cum repellendus, optio ipsa
               pariatur voluptatum nulla itaque officia odio eligendi

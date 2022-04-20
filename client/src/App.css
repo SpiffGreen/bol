@@ -3,3 +3,17 @@
 body, html {
   font-family: 'Open Sans', sans-serif;
 }
+
+/* Developers */
+.heroSection > div {
+  display: flex;
+  align-items: center;
+}
+.heroSection > div .content {
+  padding: 10px 50px;
+  /* background: red; */
+}
+
+.heroSection > div .content .title {
+  line-height: 3.5rem;
+}
