@@ -50,7 +50,7 @@ function About() {
           </p>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-3 gap-3 py-12">
-          <div className="reason">
+          <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
                 credit_card
@@ -68,7 +68,7 @@ function About() {
               </a>
             </p>
           </div>
-          <div className="reason">
+          <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
                 credit_card
@@ -86,7 +86,7 @@ function About() {
               </a>
             </p>
           </div>
-          <div className="reason">
+          <div className="reason text-center">
             <p className="icon">
               <span className="material-icons">credit_card</span>
             </p>
