@@ -59,9 +59,9 @@ function Footer() {
             </form>
             <p>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
             <div className="icons my-3 text-xl flex gap-2">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i className="fa-brands fa-instagram"></i></a>
+            <a href="#"><i className="fa-brands fa-twitter"></i></a>
             </div>
           </section>
         </div>

@@ -8,12 +8,12 @@ function About() {
     <div>
       {/* Hero section */}
       <section className="heroSection">
-        <div className="max-w-6xl mx-auto my-3 py-10 bg-zinc-100 rounded-lg">
+        <div className="max-w-6xl mx-auto my-3 py-10 bg-zinc-100 lg:rounded-lg md:rounded-lg md:px-2 lg:px-0 px-2">
           <div className="w-full text-center">
             <h2 className="text-2xl font-bold text-center text-orange-600">
               About Us
             </h2>
-            <div className="font-bold text-5xl my-7 text-zinc-700">
+            <div className="font-bold my-7 text-zinc-700 lg:text-5xl md:text-3xl text-3xl">
               We're a team of <br />
               creators & innovators
             </div>
@@ -49,7 +49,7 @@ function About() {
             asperiores repell.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-3 gap-3 py-12">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12">
           <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
@@ -112,12 +112,12 @@ function About() {
           <p className="text-center font-light">
             Meet The People Behind Boldwallet.
           </p>
-          <div className="grid grid-cols-3 items-center gap-5 my-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center gap-5 my-10">
             <div className="grid-it">
               <img
                 src={person1}
                 alt="person-1"
-                className="max-width-[250px] rounded"
+                className="lg:max-width-[300px] md:max-w-[270px] max-w-[280px] mx-auto rounded"
                 style={{ objectFit: "cover" }}
               />
               <p className="font-bold text-2xl mt-3 text-center">Tomek</p>
@@ -132,7 +132,7 @@ function About() {
               <img
                 src={person2}
                 alt="person-1"
-                className="max-width-[250px] rounded"
+                className="lg:max-width-[300px] md:max-w-[270px] max-w-[280px] mx-auto rounded"
                 style={{ objectFit: "cover" }}
               />
               <p className="font-bold text-2xl mt-3 text-center">Mark</p>
@@ -147,7 +147,7 @@ function About() {
               <img
                 src={person3}
                 alt="person-1"
-                className="max-w-[380px] max-h-[300px] rounded"
+                className="lg:max-width-[300px] md:max-w-[270px] max-w-[280px] mx-auto rounded"
                 style={{ objectFit: "cover" }}
               />
               <p className="font-bold text-2xl mt-3 text-center">Steve</p>
