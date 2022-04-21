@@ -11,7 +11,7 @@ function Developers() {
 
       {/* Hero Section */}
       <div className="heroSection">
-        <div className="max-w-6xl mx-auto min-h-[460px]" style={{backgroundImage: `url(${p5})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
+        <div className="max-w-6xl md:bg-cover sm:bg-cover mx-auto min-h-[460px]" style={{backgroundImage: `url(${p5})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
           {/* <div className="relative min-h-[500px] max-w-[75%] right-[-330px]" style={{backgroundImage: `url(${businessView})`, backgroundPosition: "center", backgroundSize: "cover"}}></div> */}
           <div className="content bg-white max-w-[500px] min-h-[300px]">
             <p className="text-5xl title">Start <br /> building today</p>
@@ -24,7 +24,7 @@ function Developers() {
       </div>
 
       {/* notes */}
-      <div className="max-w-6xl mx-auto grid grid-cols-3 gap-3 py-12">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 lg:px-0 px-2 gap-3 py-12">
           <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
@@ -81,8 +81,8 @@ function Developers() {
 
       {/* Access payments the easy way */}
       <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12">
-        <div className="grid grid-cols-2 items-center">
-          <div className="text">
+        <div className="grid lg:grid-cols-2 gap-3 lg:px-0 px-3 items-center">
+          <div className="text lg:mb-0 mb-6">
             <h2 className="font-bold text-3xl">Accepts payments the easy way</h2>
             <p className="font-thin mt-4 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,9 +103,9 @@ function Developers() {
 
       {/* Protect Yourself section */}
       <section className="protectSelf min-h-[450px] py-14">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-4xl max-w-[50%]">Protect yourself and your customers with advanced fraud detection</div>
-          <div className="grid gap-5 grid-cols-3 py-5">
+        <div className="max-w-6xl mx-auto lg:text-left text-center">
+          <div className="text-4xl max-w-[50%] lg:mx-0 mx-auto">Protect yourself and your customers with advanced fraud detection</div>
+          <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 py-5">
             <div className="grid-it">
               <div className="icons">
                 <span className="material-icons text-4xl">done_all</span>
@@ -136,11 +136,11 @@ function Developers() {
       {/* Next Steps */}
       <section className="nextSteps bg-stone-100 min-h-[350px] py-10">
         <div className="max-w-6xl mx-auto">
-          <div className="title text-4xl">Next Steps?</div>
-          <div className="grid grid-cols-4 gap-10 py-4">
+          <div className="title text-4xl md:text-left lg:text-left text-center lg:px-1 px-2">Next Steps?</div>
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 lg:px-1 px-2 md:text-left lg:text-left text-center gap-10 py-4">
             <div className="grid-t1">
               <div className="icons">
-                <div className="rounded-[50%] bg-zinc-600 flex justify-center items-center w-[45px] h-[45px]">
+                <div className="rounded-[50%] bg-zinc-600 flex lg:mx-0 md:mx-0 mx-auto justify-center items-center w-[45px] h-[45px]">
                   <span className='text-white'>1</span>
                 </div>
               </div>
@@ -150,7 +150,7 @@ function Developers() {
 
             <div className="grid-t1">
               <div className="icons">
-                <div className="rounded-[50%] bg-zinc-600 flex justify-center items-center w-[45px] h-[45px]">
+                <div className="rounded-[50%] bg-zinc-600 flex lg:mx-0 md:mx-0 mx-auto justify-center items-center w-[45px] h-[45px]">
                   <span className='text-white'>2</span>
                 </div>
               </div>
@@ -160,7 +160,7 @@ function Developers() {
 
             <div className="grid-t1">
               <div className="icons">
-                <div className="rounded-[50%] bg-zinc-600 flex justify-center items-center w-[45px] h-[45px]">
+                <div className="rounded-[50%] bg-zinc-600 flex lg:mx-0 md:mx-0 mx-auto justify-center items-center w-[45px] h-[45px]">
                   <span className='text-white'>3</span>
                 </div>
               </div>
@@ -170,7 +170,7 @@ function Developers() {
 
             <div className="grid-t1">
               <div className="icons">
-                <div className="rounded-[50%] bg-zinc-600 flex justify-center items-center w-[45px] h-[45px]">
+                <div className="rounded-[50%] bg-zinc-600 flex lg:mx-0 md:mx-0 mx-auto justify-center items-center w-[45px] h-[45px]">
                   <span className='text-white'>4</span>
                 </div>
               </div>
@@ -178,7 +178,7 @@ function Developers() {
               <p>Create a free account and select integration type.</p>
             </div>
           </div>
-          <div className="action mt-16">
+          <div className="action mt-16 lg:text-left md:text-left text-center">
             <a href="#" className="rounded bg-black hover:bg-orange-600 text-white py-2 px-3 text-sm">Get Started</a>
           </div>
         </div>
