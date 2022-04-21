@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-neutral-800 text-white pt-11">
       <div className="max-w-6xl mx-auto py-2 min-h-[300px]">
-        <div className="grid md:grid-flow-col auto-cols-auto pb-20 md:px-0 lg:px-0 px-4 text-zinc-300">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 auto-cols-auto pb-20 lg:px-0 px-4 text-zinc-300">
           <section className='md:mb-0 lg:mb-0 mb-8'>
             <div className="mb-4">Boldwallet</div>
             <ul className="font-light">
@@ -51,16 +51,22 @@ function Footer() {
           </section>
 
           <section className='max-w-[325px]'>
-            <div className="mb-4">Subscribe</div>
-            <form>
-              <div className="input"></div>
+            <div>Subscribe</div>
+            <form className='my-6'>
+              <div className="input border rounded border-white p-1">
+                <input type="email" className="text-base border-0 w-full bg-transparent outline-none" placeholder='Enter email' />
+              </div>
             </form>
             <p>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
+            <div className="icons my-3 text-xl flex gap-2">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
           </section>
         </div>
         <div className="copyright">
           <p className="text-center mt-7 md:mt-6">2022 Boldwallet™ | All Rights Reserved</p>
-          
         </div>
       </div>
     </footer>
