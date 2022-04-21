@@ -1,15 +1,17 @@
 import React from "react";
-import heroImage from "../assets/images/hero-design.svg";
+// import heroImage from "../assets/images/hero-design.svg";
+import heroImage from "../assets/images/people/p7.jpeg";
 import brand1 from "../assets/images/brands/1xbet.png";
 import brand2 from "../assets/images/brands/dominos.png";
 import brand3 from "../assets/images/brands/ginga.png";
-import businessView from "../assets/images/businessview.jpg";
+import businessView from "../assets/images/people/p4.jpeg";
+// import businessView from "../assets/images/businessview.jpg";
 
 function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero min-h-[600px] flex items-center">
+      <div className="hero min-h-[600px] flex items-center md:px-3 lg:px-0 px-3">
         <div className="flex grow justify-between items-center container max-w-6xl mx-auto max-h-[480px] min-h-[350px]">
           <div className="text grow">
             <h1 className="text-[2.813rem]">
@@ -24,13 +26,14 @@ function Home() {
               Get Started
             </button>
           </div>
-          <img src={heroImage} className="max-h-fit" alt="hero-image" />
+          {/* <img src={heroImage} className="max-h-fit" alt="hero-image" /> */}
+          <img src={heroImage} className="h-[350px] w-[350px] rounded-[50%] object-cover lg:block md:block hidden" alt="hero-image"/>
         </div>
       </div>
 
       {/* Why us section */}
       <div className="why">
-        <div className="max-w-6xl mx-auto grid grid-cols-2">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 md:grid-cols-2 md:px-3 lg:px-0 px-3">
           <div>
             <p className="text-lg">Why Boldwallet</p>
             <h2 className="text-3xl my-3">
@@ -45,7 +48,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-3 gap-3 py-12">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-3 py-12 md:px-3 lg:px-0 px-3">
           <div className="reason">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
@@ -103,15 +106,15 @@ function Home() {
 
       {/* Get View of business */}
       <section className="business-view">
-        <div className="max-w-6xl mx-auto py-20">
-          <div className="grid grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl mx-auto py-20 md:px-3 lg:px-0 px-3">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 items-center">
             <div className="image">
               <img src={businessView} alt="business view" className="" />
             </div>
             <div className="text">
               <div className="text-3xl">Get a full view of your business at a glance.</div>
               <p className="font-light my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
@@ -160,8 +163,8 @@ function Home() {
       </section>
 
       {/* Partners */}
-      <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12">
-        <div className="grid grid-cols-2 items-center">
+      <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12 md:px-3 lg:px-0 px-3">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-3">
           <div className="text">
             <h2 className="font-bold text-3xl">Our partners</h2>
             <p className="font-thin mt-4 text-sm">
@@ -182,7 +185,7 @@ function Home() {
       </div>
 
       {/* Talk to us */}
-      <div className="talk max-w-6xl mx-auto flex items-center min-h-[350px]">
+      <div className="talk max-w-6xl mx-auto flex items-center min-h-[350px] md:px-3 lg:px-0 px-3">
         <div className="main max-w-2xl mx-auto">
           <h3 className="text-center text-3xl mb-5">Try Boldwallet</h3>
           <p className="text-center font-light">

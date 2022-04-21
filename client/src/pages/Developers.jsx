@@ -2,7 +2,8 @@ import React from 'react'
 import brand1 from "../assets/images/brands/1xbet.png";
 import brand2 from "../assets/images/brands/dominos.png";
 import brand3 from "../assets/images/brands/ginga.png";
-import businessView from "../assets/images/hero-1.png";
+import p5 from "../assets/images/people/p5.jpeg";
+// import businessView from "../assets/images/hero-1.png";
 
 function Developers() {
   return (
@@ -10,7 +11,7 @@ function Developers() {
 
       {/* Hero Section */}
       <div className="heroSection">
-        <div className="max-w-6xl mx-auto min-h-[460px]" style={{backgroundImage: `url(${businessView})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
+        <div className="max-w-6xl mx-auto min-h-[460px]" style={{backgroundImage: `url(${p5})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
           {/* <div className="relative min-h-[500px] max-w-[75%] right-[-330px]" style={{backgroundImage: `url(${businessView})`, backgroundPosition: "center", backgroundSize: "cover"}}></div> */}
           <div className="content bg-white max-w-[500px] min-h-[300px]">
             <p className="text-5xl title">Start <br /> building today</p>
