@@ -120,9 +120,9 @@ function About() {
                 className="max-width-[250px] rounded"
                 style={{ objectFit: "cover" }}
               />
-              <p className="font-bold text-2xl mt-3">Tomek</p>
-              <p className="font-zinc-5 text-zinc-600">Manager</p>
-              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600">
+              <p className="font-bold text-2xl mt-3 text-center">Tomek</p>
+              <p className="font-zinc-5 text-zinc-600 text-center">General Manager</p>
+              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600 justify-center">
                 <a href="#"><i className="fa-brands fa-twitter hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-facebook-f hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-linkedin-in hover:text-black"></i></a>
@@ -135,9 +135,9 @@ function About() {
                 className="max-width-[250px] rounded"
                 style={{ objectFit: "cover" }}
               />
-              <p className="font-bold text-2xl mt-3">Mark</p>
-              <p className="font-zinc-5 text-zinc-600">CEO</p>
-              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600">
+              <p className="font-bold text-2xl mt-3 text-center">Mark</p>
+              <p className="font-zinc-5 text-zinc-600 text-center">CEO</p>
+              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600 justify-center">
                 <a href="#"><i className="fa-brands fa-twitter hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-facebook-f hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-linkedin-in hover:text-black"></i></a>
@@ -150,9 +150,9 @@ function About() {
                 className="max-w-[380px] max-h-[300px] rounded"
                 style={{ objectFit: "cover" }}
               />
-              <p className="font-bold text-2xl mt-3">Steve</p>
-              <p className="font-zinc-5 text-zinc-600">Lead Developer</p>
-              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600">
+              <p className="font-bold text-2xl mt-3 text-center">Steve</p>
+              <p className="font-zinc-5 text-zinc-600 text-center">Lead Developer</p>
+              <div className="icons flex gap-2 py-3 items-center text-xl text-zinc-600 justify-center">
                 <a href="#"><i className="fa-brands fa-twitter hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-facebook-f hover:text-black"></i></a>
                 <a href="#"><i className="fa-brands fa-linkedin-in hover:text-black"></i></a>
