@@ -19,23 +19,17 @@ import { NavLink } from "react-router-dom";
 
 const solutions = [
   {
-    name: "About Duefile?",
+    name: "About Boldwallet?",
     description:
-      "Our visions, goals and the problems we hope to fix in cloud storage",
-    href: "#",
+      "Our visions, goals and the problems we hope to fix in payment systems",
+    href: "/about",
     icon: InformationCircleIcon,
   },
   {
     name: "Security",
     description: "Understand how we take your privacy seriously.",
-    href: "/developer",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
     href: "#",
-    icon: ViewGridIcon,
+    icon: ShieldCheckIcon,
   },
   {
     name: "FAQs",
@@ -44,39 +38,20 @@ const solutions = [
     icon: RefreshIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch Demo", href: "https://youtube.com", icon: PlayIcon },
-  { name: "Contact Sales", href: "mailto:duefile@gmail.com", icon: PhoneIcon },
-];
 const resources = [
   {
-    name: "API",
-    description: "Start integrating Duefile's API.",
-    href: "/developer",
+    name: "API Documentation",
+    description: "Start integrating Boldwallets's API.",
+    href: "#",
     icon: TerminalIcon,
   },
   {
-    name: "Help Center",
+    name: "Developers",
     description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
+      "Understand the API platform and what we offer.",
+    href: "/developers",
     icon: SupportIcon,
   },
-  {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
-    icon: ShieldCheckIcon,
-  },
-];
-const recentPosts = [
-  { id: 1, name: "How to transfer files", href: "/docs" },
-  {
-    id: 2,
-    name: "How to protect your files with encryption",
-    href: "#",
-  },
-  { id: 3, name: "Integrate Duefile API in a React Project", href: "/docs" },
 ];
 
 function classNames(...classes) {
@@ -158,22 +133,6 @@ export default function Example() {
                               </a>
                             ))}
                           </div>
-                          <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <a
-                                  href={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                                >
-                                  <item.icon
-                                    className="flex-shrink-0 h-6 w-6 text-gray-600"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
-                              </div>
-                            ))}
-                          </div>
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -245,38 +204,6 @@ export default function Example() {
                                 </div>
                               </a>
                             ))}
-                          </div>
-                          <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                            <div>
-                              <h3 className="text-sm tracking-wide font-medium text-gray-600 uppercase">
-                                Recent Articles
-                              </h3>
-                              <ul role="list" className="mt-4 space-y-4">
-                                {recentPosts.map((post) => (
-                                  <li
-                                    key={post.id}
-                                    className="text-base truncate"
-                                  >
-                                    <a
-                                      href={post.href}
-                                      className="font-medium text-gray-900 hover:text-gray-700"
-                                    >
-                                      {post.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div className="mt-5 text-sm">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-700 hover:text-blue-700"
-                              >
-                                {" "}
-                                View all posts{" "}
-                                <span aria-hidden="true">&rarr;</span>
-                              </a>
-                            </div>
                           </div>
                         </div>
                       </Popover.Panel>
