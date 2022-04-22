@@ -27,7 +27,7 @@ function Home() {
             </button>
           </div>
           {/* <img src={heroImage} className="max-h-fit" alt="hero-image" /> */}
-          <img src={heroImage} className="h-[350px] w-[350px] rounded-[50%] object-cover lg:block md:block hidden" alt="hero-image"/>
+          <img src={heroImage} className="h-[350px] w-[350px] object-cover lg:block md:block hidden" alt="hero-image"/>
         </div>
       </div>
 
