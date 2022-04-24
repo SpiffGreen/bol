@@ -42,14 +42,14 @@ function About() {
 
       {/* Values section */}
       <section className="valueSection">
-        <div className="max-w-6xl mx-auto py-8">
-          <h3 className="text-center text-3xl mb-2">The Values We Live By</h3>
+        <div className="container mx-auto py-8 lg:px-0 px-3">
+          <h3 className="text-center lg:text-3xl text-2xl mb-2">The Values We Live By</h3>
           <p className="text-center font-light">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad
             asperiores repell.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12">
           <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">

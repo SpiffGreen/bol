@@ -48,21 +48,19 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-3 py-12 md:px-3 lg:px-0 px-3">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-6 py-12 md:px-3 lg:px-0 px-3">
           <div className="reason">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
                 credit_card
               </span>
             </p>
-            <h3>Secure Payment</h3>
-            <p className="detail font-thin text-sm my-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero
-              sed eum voluptate deserunt velit commodi obcaecati perferendis
-              assumenda! Ad, in asperiores!
+            <h3 className="text-2xl">Secure Payment</h3>
+            <p className="detail font-thin text-base my-4">
+            Our intuitive risk assessment proactively blocks fraudulent transactions, reducing fraud-related chargebacks for you. Our secure SDKs tokenize card payments to protect users. 
             </p>
             <p>
-              <a href="#" className="text-blue-500 text-sm hover:underline">
+              <a href="#" className="text-blue-500 text-base hover:underline">
                 Risk and Compliance
               </a>
             </p>
@@ -73,30 +71,28 @@ function Home() {
                 credit_card
               </span>
             </p>
-            <h3>Revenue</h3>
-            <p className="detail font-thin text-sm my-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero
-              sed eum voluptate deserunt velit commodi obcaecati perferendis
-              assumenda! Ad, in asperiores!
+            <h3 className="text-2xl">Revenue</h3>
+            <p className="detail font-thin text-base my-4">
+            Our innovative payment options including recurrent payments, invoice splitting and USSD help to reduce failed payments and increase your revenue.
             </p>
             <p>
-              <a href="#" className="text-blue-500 text-sm hover:underline">
+              <a href="#" className="text-blue-500 text-base hover:underline">
                 Grow with Boldwallet
               </a>
             </p>
           </div>
           <div className="reason">
             <p className="icon">
+              <div className="icon-container">
               <span className="material-icons">credit_card</span>
+              </div>
             </p>
-            <h3>Customised for you</h3>
-            <p className="detail font-thin text-sm my-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero
-              sed eum voluptate deserunt velit commodi obcaecati perferendis
-              assumenda! Ad, in asperiores!
+            <h3 className="text-2xl">Customised for you</h3>
+            <p className="detail font-thin text-base my-4">
+            We tailor our payment solutions to the specifics of your business, so you can reach every single customer and expand into new markets.
             </p>
             <p>
-              <a href="#" className="text-blue-500 text-sm hover:underline">
+              <a href="#" className="text-blue-500 text-base hover:underline">
                 Learn more multiple payment options
               </a>
             </p>
@@ -106,15 +102,15 @@ function Home() {
 
       {/* Get View of business */}
       <section className="business-view">
-        <div className="max-w-6xl mx-auto py-20 md:px-3 lg:px-0 px-3">
+        <div className="container mx-auto py-20 md:px-3 lg:px-0 px-3">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 items-center">
             <div className="image">
-              <img src={businessView} alt="business view" className="" />
+              <img src={businessView} alt="business view" className="max-h-[630px] w-[100%] object-cover" />
             </div>
             <div className="text">
-              <div className="text-3xl">Get a full view of your business at a glance.</div>
+              <div className="text-4xl">Get a full view of your business at a glance.</div>
               <p className="font-light my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
-              <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
+              <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10">
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
@@ -123,7 +119,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="title text-xl my-2">Dashboard Analytics</div>
-                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                  <p className="font-light">Access insights from your data in a single system. </p>
                 </div>
 
                 <div className="grid-it">
@@ -132,8 +128,8 @@ function Home() {
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
-                  <div className="title text-xl my-2">Dashboard Analytics</div>
-                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                  <div className="title text-xl my-2">Online and Offline Payments</div>
+                  <p className="font-light">Our payment methods help you keep the revenue flowing in.</p>
                 </div>
 
                 <div className="grid-it">
@@ -142,8 +138,8 @@ function Home() {
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
-                  <div className="title text-xl my-2">Dashboard Analytics</div>
-                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                  <div className="title text-xl my-2">Customised for you</div>
+                  <p className="font-light">We help you maintain a cohesive brand identity with our customizable checkout.</p>
                 </div>
 
                 <div className="grid-it">
@@ -152,8 +148,8 @@ function Home() {
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
-                  <div className="title text-xl my-2">Dashboard Analytics</div>
-                  <p className="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
+                  <div className="title text-xl my-2">Store Collections</div>
+                  <p className="font-light">Get an overview of your business across multiple locations.</p>
                 </div>
 
               </div>
@@ -166,8 +162,8 @@ function Home() {
       <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12 md:px-3 lg:px-0 px-3">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-3">
           <div className="text">
-            <h2 className="font-bold text-3xl">Our partners</h2>
-            <p className="font-thin mt-4 text-sm">
+            <h2 className="font-bold text-4xl">Our partners</h2>
+            <p className="font-thin mt-4 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium ex modi molestias vel non cum repellendus, optio ipsa
               pariatur voluptatum nulla itaque officia odio eligendi
@@ -185,19 +181,19 @@ function Home() {
       </div>
 
       {/* Talk to us */}
-      <div className="talk max-w-6xl mx-auto flex items-center min-h-[350px] md:px-3 lg:px-0 px-3">
-        <div className="main max-w-2xl mx-auto">
-          <h3 className="text-center text-3xl mb-5">Try Boldwallet</h3>
-          <p className="text-center font-light">
+      <div className="talk container mx-auto flex items-center min-h-[350px] md:px-3 lg:px-0 px-3">
+        <div className="main max-w-2xl mx-auto lg:mt-0 md:mt-0 mt-16">
+          <h3 className="text-center lg:text-4xl text-3xl mb-5">Try Boldwallet</h3>
+          <p className="text-center font-light text-base">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad
             asperiores repellat mollitia dolores officiis error, consectetur
             iure, doloribus Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Expedita, amet.
           </p>
-          <div className="buttons mx-auto max-w-xl flex gap-3 flex-wrap content-center justify-center items-center my-4 text-sm">
+          <div className="buttons mx-auto max-w-xl flex gap-3 flex-wrap content-center justify-center items-center my-8 text-sm">
             <a
               href="/"
-              className="btn bg-black hover:bg-orange-600 text-white rounded-3xl py-2 px-4 "
+              className="btn bg-black hover:bg-orange-600 text-white rounded py-2 px-4 "
             >
               Get Started
             </a>

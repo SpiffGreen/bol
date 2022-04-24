@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
   return (
     <footer className="bg-neutral-800 text-white pt-11">
-      <div className="max-w-6xl mx-auto py-2 min-h-[300px]">
-        <div className="grid lg:grid-cols-5 md:grid-cols-4 auto-cols-auto pb-20 lg:px-0 px-4 text-zinc-300">
+      <div className="container mx-auto py-2 min-h-[270px]">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 auto-cols-auto pb-10 lg:px-0 px-4 text-zinc-300 lg:text-base md:text-base text-sm">
           <section className='md:mb-0 lg:mb-0 mb-8'>
             <div className="mb-4">Boldwallet</div>
             <ul className="font-light">
@@ -51,14 +51,14 @@ function Footer() {
           </section>
 
           <section className='max-w-[325px]'>
-            <div>Subscribe</div>
+            <div className='lg:text-base md:text-base text-sm'>Subscribe</div>
             <form className='my-6'>
-              <div className="input border rounded border-white p-1">
+              <div className="input border rounded border-zinc-600 p-2">
                 <input type="email" className="text-base border-0 w-full bg-transparent outline-none" placeholder='Enter email' />
               </div>
             </form>
-            <p>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
-            <div className="icons my-3 text-xl flex gap-2">
+            <p className='lg:text-base md:text-base text-sm'>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
+            <div className="icons mt-3 text-xl flex gap-4">
             <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
             <a href="#"><i className="fa-brands fa-instagram"></i></a>
             <a href="#"><i className="fa-brands fa-twitter"></i></a>
@@ -66,7 +66,7 @@ function Footer() {
           </section>
         </div>
         <div className="copyright">
-          <p className="text-center mt-7 md:mt-6">2022 Boldwallet™ | All Rights Reserved</p>
+          <p className="text-center text-zinc-300 my-4 md:mt-6 lg:text-base md:text-base text-sm">2022 Boldwallet™ | All Rights Reserved</p>
         </div>
       </div>
     </footer>
