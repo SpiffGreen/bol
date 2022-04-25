@@ -111,8 +111,8 @@ function Home() {
               <img src={businessView} alt="business view" className="max-h-[630px] w-[100%] object-cover" />
             </div>
             <div className="text">
-              <div className="text-4xl">Get a full view of your business at a glance.</div>
-              <p className="font-light my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
+              <div className="text-3xl lg:text-left md:text-left text-center lg:text-4xl md:text-4xl">Get a full view of your business at a glance.</div>
+              <p className="font-light my-5 lg:text-left md:text-left text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
               <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10 lg:text-left md:text-left text-center">
 
                 <div className="grid-it">
