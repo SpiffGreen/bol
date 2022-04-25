@@ -212,7 +212,7 @@ export default function Example() {
                 )}
               </Popover>
             </Popover.Group>
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <div className="hidden md:flex gap-3 items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="/login"
                 className="whitespace-nowrap text-base font-medium text-gray-600 hover:text-gray-900"
@@ -221,7 +221,8 @@ export default function Example() {
               </a>
               <a
                 href="/signup"
-                className="btn btnOutline ml-6 inline-flex items-center justify-center text-gray-600 hover:text-gray-900"
+                // className="btn btnOutline ml-6 inline-flex items-center justify-center text-gray-600 hover:text-gray-900"
+                className="btn bg-black mt-2 rounded py-2 px-3 text-white  text-sm"
               >
                 Sign up
               </a>
@@ -326,6 +327,7 @@ export default function Example() {
 const Container = styled.div`
   position: sticky;
   width: 100%;
+  z-index: 99;
   .logo {
     font-size: 1.2rem;
     font-weight: 800;
