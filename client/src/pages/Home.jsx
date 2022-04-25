@@ -1,6 +1,7 @@
 import React from "react";
 // import heroImage from "../assets/images/hero-design.svg";
 import heroImage from "../assets/images/people/p7.jpeg";
+import heroImage1 from "../assets/images/hero1.svg";
 import brand1 from "../assets/images/brands/1xbet.png";
 import brand2 from "../assets/images/brands/dominos.png";
 import brand3 from "../assets/images/brands/ginga.png";
@@ -11,36 +12,38 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero min-h-[600px] flex items-center md:px-3 lg:px-0 px-3">
-        <div className="flex grow justify-between items-center container max-w-6xl mx-auto max-h-[480px] min-h-[350px]">
-          <div className="text grow">
-            <h1 className="text-[2.813rem]">
+      <div className="hero lg:min-h-[90vh] mg:min-h-[60vh] flex lg:items-center md:items-center items-start md:px-3 lg:px-0 px-3">
+        <div className="flex grow justify-between items-center container mx-auto max-h-[480px] min-h-[350px] lg:flex-row md:flex-row flex-col-reverse">
+          <div className="text max-w-[600px] lg:text-left md:text-left text-center lg:mt-0 md:mt-0 mt-4">
+            <h1 className="lg:text-[2.813rem] md:text-[2.813rem] text-3xl">
               Global Payment <br />
-              Gateway Made <br />
+              Gateway Made
               Easy
             </h1>
-            <p className="font-light text-justify my-2.5">
+            {/* <p className="font-light text-justify my-2.5">
               Seamless, Flexible and Easy access transactions from home.{" "}
-            </p>
-            <button className="btn bg-orange-500 mt-2 rounded-3xl py-2 px-3 text-white">
-              Get Started
+            </p> */}
+            <p className="lg:text-base md:text-base text-sm font-thin my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus unde nesciunt recusandae mollitia aliquam quia deleniti tenetur tempora inventore.</p>
+            <button className="btn bg-black mt-2 rounded py-2 px-3 text-white  text-sm">
+              Let's get started
             </button>
           </div>
-          {/* <img src={heroImage} className="max-h-fit" alt="hero-image" /> */}
-          <img src={heroImage} className="h-[350px] w-[350px] object-cover lg:block md:block hidden" alt="hero-image"/>
+          {/* <img src={heroImage} className="min-h-[350px] max-w-[50%] grow object-cover lg:block md:block hidden" alt="hero-image"/> */}
+          {/* <img src={heroImage1} alt="svg" /> */}
+          <img src={heroImage} style={{mask: `url(${heroImage1})`, maskRepeat: "no-repeat", maskSize: "contain", maskPosition: "center"}} className="lg:min-h-[350px] lg:max-w-[50%] grow object-cover sm:w-[300px]" alt="hero-image"/>
         </div>
       </div>
 
       {/* Why us section */}
       <div className="why">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 md:grid-cols-2 md:px-3 lg:px-0 px-3">
+        <div className="container mx-auto grid lg:grid-cols-2 md:grid-cols-2 md:px-3 lg:px-0 px-3 lg:mt-0 md:mt-0 mt-16 lg:text-left md:text-left text-center">
           <div>
             <p className="text-lg">Why Boldwallet</p>
             <h2 className="text-3xl my-3">
               Tailored Payments <br />
               Solutions for your <br /> Business.
             </h2>
-            <p className="text-justify font-thin mb-3">
+            <p className="lg:text-justify md:text-justify text-center font-thin mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
               necessitatibus facilis cumque ut harum ab beatae eius, quas animi
               illo repellendus provident quis quo quam dicta nesciunt nobis
@@ -48,7 +51,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-6 py-12 md:px-3 lg:px-0 px-3">
+        <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-6 py-12 md:px-3 lg:px-0 px-3 lg:text-left md:text-left text-center">
           <div className="reason">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
@@ -110,11 +113,11 @@ function Home() {
             <div className="text">
               <div className="text-4xl">Get a full view of your business at a glance.</div>
               <p className="font-light my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam nostrum ut provident distinctio iste, voluptate a nobis est. Numquam vitae atque vero blanditiis molestiae.</p>
-              <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10">
+              <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10 lg:text-left md:text-left text-center">
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
-                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center lg:mx-0 md:mx-0 mx-auto">
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
@@ -124,7 +127,7 @@ function Home() {
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
-                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center lg:mx-0 md:mx-0 mx-auto">
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
@@ -134,7 +137,7 @@ function Home() {
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
-                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center lg:mx-0 md:mx-0 mx-auto">
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
@@ -144,7 +147,7 @@ function Home() {
 
                 <div className="grid-it">
                   <div className="icon text-gray-500">
-                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center">
+                    <div className="rounded-[50%] border border-gray-500 w-[50px] h-[50px] flex justify-center items-center lg:mx-0 md:mx-0 mx-auto">
                       <span className="material-icons">payments</span>
                     </div>
                   </div>
@@ -159,11 +162,11 @@ function Home() {
       </section>
 
       {/* Partners */}
-      <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12 md:px-3 lg:px-0 px-3">
+      <div className="container mx-auto min-h-[15rem] flex items-center gap-12 md:px-3 lg:px-0 px-3">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-3">
-          <div className="text">
-            <h2 className="font-bold text-4xl">Our partners</h2>
-            <p className="font-thin mt-4 text-base">
+          <div className="text md:text-left text-center">
+            <h2 className="font-bold text-4xl lg:text-left">Our partners</h2>
+            <p className="font-thin mt-4 lg:mb-0 md:mb-0 mb-8 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium ex modi molestias vel non cum repellendus, optio ipsa
               pariatur voluptatum nulla itaque officia odio eligendi
@@ -181,8 +184,8 @@ function Home() {
       </div>
 
       {/* Talk to us */}
-      <div className="talk container mx-auto flex items-center min-h-[350px] md:px-3 lg:px-0 px-3">
-        <div className="main max-w-2xl mx-auto lg:mt-0 md:mt-0 mt-16">
+      <div className="container mx-auto flex items-center min-h-[350px] md:px-3 lg:px-0 px-3 lg:my-0 md:my-0 my-14">
+        <div className="main max-w-2xl mx-auto">
           <h3 className="text-center lg:text-4xl text-3xl mb-5">Try Boldwallet</h3>
           <p className="text-center font-light text-base">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad
@@ -190,7 +193,7 @@ function Home() {
             iure, doloribus Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Expedita, amet.
           </p>
-          <div className="buttons mx-auto max-w-xl flex gap-3 flex-wrap content-center justify-center items-center my-8 text-sm">
+          <div className="buttons mx-auto max-w-xl flex gap-5 flex-wrap content-center justify-center items-center my-8 text-sm">
             <a
               href="/"
               className="btn bg-black hover:bg-orange-600 text-white rounded py-2 px-4 "
