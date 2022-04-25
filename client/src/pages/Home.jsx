@@ -15,7 +15,7 @@ function Home() {
       <div className="hero lg:min-h-[90vh] mg:min-h-[60vh] flex lg:items-center md:items-center items-start md:px-3 lg:px-0 px-3">
         <div className="flex grow justify-between items-center container mx-auto max-h-[480px] min-h-[350px] lg:flex-row md:flex-row flex-col-reverse">
           <div className="text max-w-[600px] lg:text-left md:text-left text-center lg:mt-0 md:mt-0 mt-4">
-            <h1 className="lg:text-[2.813rem] md:text-[2.813rem] text-3xl">
+            <h1 className="lg:text-[2.813rem] md:text-[2.813rem] text-3xl hero-text">
               Global Payment <br />
               Gateway Made
               Easy
