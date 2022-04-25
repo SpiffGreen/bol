@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero lg:min-h-[90vh] mg:min-h-[60vh] flex lg:items-center md:items-center items-start md:px-3 lg:px-0 px-3">
+      <div className="hero lg:min-h-[90vh] md:min-h-[60vh] flex lg:items-center md:items-center items-start md:px-3 lg:px-0 px-3">
         <div className="flex grow justify-between items-center container mx-auto max-h-[480px] min-h-[350px] lg:flex-row md:flex-row flex-col-reverse">
           <div className="text max-w-[600px] lg:text-left md:text-left text-center lg:mt-0 md:mt-0 mt-4">
             <h1 className="lg:text-[2.813rem] md:text-[2.813rem] text-3xl hero-text">
@@ -28,9 +28,7 @@ function Home() {
               Let's get started
             </button>
           </div>
-          {/* <img src={heroImage} className="min-h-[350px] max-w-[50%] grow object-cover lg:block md:block hidden" alt="hero-image"/> */}
-          {/* <img src={heroImage1} alt="svg" /> */}
-          <img src={heroImage} style={{mask: `url(${heroImage1})`, maskRepeat: "no-repeat", maskSize: "contain", maskPosition: "center"}} className="lg:min-h-[350px] lg:max-w-[50%] grow object-cover sm:w-[300px]" alt="hero-image"/>
+            <img src={heroImage} style={{mask: `url(${heroImage1})`, WebkitMask: `url(${heroImage1})`, WebkitMaskRepeat: "no-repeat", WebkitMaskPosition: "center", WebkitMaskSize: "contain", maskRepeat: "no-repeat", maskSize: "contain", maskPosition: "center"}} className="lg:min-h-[350px] h-[100vh] lg:max-w-[50%] grow object-cover sm:w-[300px] hero-image" alt="hero-image"/>
         </div>
       </div>
 
