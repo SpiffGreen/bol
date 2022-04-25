@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-neutral-800 text-white pt-11">
       <div className="container mx-auto py-2 min-h-[270px]">
-        <div className="grid lg:grid-cols-5 md:grid-cols-4 auto-cols-auto pb-10 lg:px-0 px-4 text-zinc-300 lg:text-base md:text-base text-sm">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 auto-cols-auto pb-10 lg:px-0 px-4 text-zinc-300 lg:text-base md:text-base text-sm lg:text-left md:text-left text-center">
           <section className='md:mb-0 lg:mb-0 mb-8'>
             <div className="mb-4">Boldwallet</div>
             <ul className="font-light">
@@ -50,15 +50,15 @@ function Footer() {
             </ul>
           </section>
 
-          <section className='max-w-[325px]'>
-            <div className='lg:text-base md:text-base text-sm'>Subscribe</div>
+          <section className='max-w-[325px] md:mx-0 lg:mx-0 mx-auto'>
+            <div className='lg:text-base md:text-base text-sm lg:text-left md:text-left text-center'>Subscribe</div>
             <form className='my-6'>
               <div className="input border rounded border-zinc-600 p-2">
                 <input type="email" className="text-base border-0 w-full bg-transparent outline-none" placeholder='Enter email' />
               </div>
             </form>
-            <p className='lg:text-base md:text-base text-sm'>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
-            <div className="icons mt-3 text-xl flex gap-4">
+            <p className='lg:text-base md:text-base text-sm md:text-left text-center'>By submitting this form, you acknowledge that you have reviewed the terms of our Privacy Statement and consent to the use of data in accordance there with.</p>
+            <div className="icons mt-3 text-xl flex gap-4 md:justify-start justify-center">
             <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
             <a href="#"><i className="fa-brands fa-instagram"></i></a>
             <a href="#"><i className="fa-brands fa-twitter"></i></a>
