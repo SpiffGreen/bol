@@ -11,7 +11,7 @@ function Developers() {
 
       {/* Hero Section */}
       <div className="heroSection">
-        <div className="max-w-6xl md:bg-cover sm:bg-cover mx-auto min-h-[460px]" style={{backgroundImage: `url(${p5})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
+        <div className="container md:bg-cover sm:bg-cover mx-auto min-h-[460px]" style={{backgroundImage: `url(${p5})`, backgroundPosition: "right center", backgroundSize: "75% 100%", backgroundRepeat: "no-repeat"}} >
           {/* <div className="relative min-h-[500px] max-w-[75%] right-[-330px]" style={{backgroundImage: `url(${businessView})`, backgroundPosition: "center", backgroundSize: "cover"}}></div> */}
           <div className="content bg-white max-w-[500px] min-h-[300px]">
             <p className="text-5xl title">Start <br /> building today</p>
@@ -24,7 +24,7 @@ function Developers() {
       </div>
 
       {/* notes */}
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 lg:px-0 px-2 gap-3 py-12">
+      <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-2 lg:px-0 px-2 gap-3 py-12">
           <div className="reason text-center">
             <p className="icon">
               <span className="material-icons material-icons-outlined">
@@ -80,10 +80,10 @@ function Developers() {
         </div>
 
       {/* Access payments the easy way */}
-      <div className="max-w-6xl mx-auto min-h-[15rem] flex items-center gap-12">
+      <div className="container mx-auto min-h-[15rem] flex items-center gap-12">
         <div className="grid lg:grid-cols-2 gap-3 lg:px-0 px-3 items-center">
-          <div className="text lg:mb-0 mb-6">
-            <h2 className="font-bold text-3xl">Accepts payments the easy way</h2>
+          <div className="text lg:mb-0 mb-6 md:text-left text-center">
+            <h2 className="font-bold text-3xl lg:px-0 px-3 lg:text-left">Accepts payments the easy way</h2>
             <p className="font-thin mt-4 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium ex modi molestias vel non cum repellendus, optio ipsa
@@ -103,9 +103,9 @@ function Developers() {
 
       {/* Protect Yourself section */}
       <section className="protectSelf min-h-[450px] py-14">
-        <div className="max-w-6xl mx-auto lg:text-left text-center">
-          <div className="text-4xl max-w-[50%] lg:mx-0 mx-auto">Protect yourself and your customers with advanced fraud detection</div>
-          <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 py-5">
+        <div className="container mx-auto lg:text-left text-center">
+          <div className="text-2xl lg:text-4xl md:text-3xl lg:max-w-[50%] md:max-w-[75%] text-center lg:text-left md:text-left lg:px-0 px-3">Protect yourself and your customers with advanced fraud detection</div>
+          <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 py-5 lg:px-0 px-3">
             <div className="grid-it">
               <div className="icons">
                 <span className="material-icons text-4xl">done_all</span>
@@ -135,7 +135,7 @@ function Developers() {
 
       {/* Next Steps */}
       <section className="nextSteps bg-stone-100 min-h-[350px] py-10">
-        <div className="max-w-6xl mx-auto">
+        <div className="container mx-auto">
           <div className="title text-4xl md:text-left lg:text-left text-center lg:px-1 px-2">Next Steps?</div>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 lg:px-1 px-2 md:text-left lg:text-left text-center gap-10 py-4">
             <div className="grid-t1">
